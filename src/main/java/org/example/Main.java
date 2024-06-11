@@ -53,7 +53,7 @@ public class Main {
             for (int i = USER_ID_START_POINT; i < USER_ID_END_POINT; i++) {
                 String userData = JSON_AUTH_INPUT_STRING
                         .replace("XXXXXXXXXXXXX", "9000000" + i)
-                        .replace("passYYY", "admin");
+                        .replace("passYYY", "user");
                 String userToken = retrieveJwtToken(userData);
 
                 String bodyRequest = JSON_VOTE_INPUT_STRING
